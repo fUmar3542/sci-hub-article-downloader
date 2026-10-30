@@ -261,8 +261,6 @@ def main():
         next_break = random.randint(10, 20)  # take a longer "coffee break" every so often
 
         for i, (row_no, mid, doi, fname) in enumerate(rows, 1):
-            if row_no < 388:
-                continue
             tag = f"[{i}/{len(rows)}] {mid} ({doi or 'no DOI'})"
 
             def record(status, detail):
